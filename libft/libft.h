@@ -33,13 +33,6 @@ typedef struct		s_file
 	struct s_file	*next;
 }					t_file;
 
-typedef	struct		s_xyz
-{
-	double			x;
-	double			y;
-	double			z;
-}					t_xyz;
-
 int					ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
@@ -111,6 +104,5 @@ void				*ft_realloc(void **ptr, size_t size);
 int					get_next_line(const int fd, char **line);
 int					ft_abs(int n);
 int					word_cnt(char *str);
-double				vecdot(t_xyz a, t_xyz b);
 
 #endif
